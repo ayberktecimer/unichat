@@ -168,7 +168,7 @@
         "SMTPServerTimeout": 10,
         "ConnectionSecurity": "",
         "SendPushNotifications": true,
-        "PushNotificationServer": "https://push-test.mattermost.com",
+        "PushNotificationServer": "https://push-test.cirql.chat",
         "PushNotificationContents": "generic",
         "PushNotificationBuffer": 1000,
         "EnableEmailBatching": false,
@@ -186,11 +186,11 @@
         "ShowFullName": true
     },
     "SupportSettings": {
-        "TermsOfServiceLink": "https://mattermost.com/pl/terms-of-use/",
-        "PrivacyPolicyLink": "https://mattermost.com/pl/privacy-policy/",
-        "AboutLink": "https://mattermost.com/pl/about-mattermost",
-        "HelpLink": "https://mattermost.com/pl/help/",
-        "ReportAProblemLink": "https://mattermost.com/pl/report-a-bug",
+        "TermsOfServiceLink": "https://cirql.chat/pl/terms-of-use/",
+        "PrivacyPolicyLink": "https://cirql.chat/pl/privacy-policy/",
+        "AboutLink": "https://cirql.chat/pl/about-cirqlchat",
+        "HelpLink": "https://cirql.chat/pl/help/",
+        "ReportAProblemLink": "https://cirql.chat/pl/report-a-bug",
         "ForgotPasswordLink": "",
         "SupportEmail": "",
         "CustomTermsOfServiceEnabled": false,
@@ -205,7 +205,7 @@
         "AllowBannerDismissal": true,
         "AdminNoticesEnabled": false,
         "UserNoticesEnabled": false,
-        "NoticesURL": "https://notices.mattermost.com/",
+        "NoticesURL": "https://notices.cirql.chat/",
         "NoticesFetchFrequency": 3600,
         "NoticesSkipCache": false
     },
@@ -347,9 +347,9 @@
     },
     "NativeAppSettings": {
         "AppCustomURLSchemes": ["mmauth://", "mmauthbeta://"],
-        "AppDownloadLink": "https://mattermost.com/pl/download-apps",
-        "AndroidAppDownloadLink": "https://mattermost.com/pl/android-app/",
-        "IosAppDownloadLink": "https://mattermost.com/pl/ios-app/"
+        "AppDownloadLink": "https://cirql.chat/pl/download-apps",
+        "AndroidAppDownloadLink": "https://cirql.chat/pl/android-app/",
+        "IosAppDownloadLink": "https://cirql.chat/pl/ios-app/"
     },
     "ClusterSettings": {
         "Enable": false
@@ -414,7 +414,7 @@
         "EnableRemoteMarketplace": true,
         "AutomaticPrepackagedPlugins": true,
         "RequirePluginSignature": false,
-        "MarketplaceURL": "https://api.integrations.mattermost.com",
+        "MarketplaceURL": "https://api.integrations.cirql.chat",
         "SignaturePublicKeyFiles": [],
         "ChimeraOAuthProxyURL": ""
     },

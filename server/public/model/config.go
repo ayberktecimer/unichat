@@ -54,8 +54,8 @@ const (
 
 	GenericNoChannelNotification = "generic_no_channel"
 	GenericNotification          = "generic"
-	GenericNotificationServer    = "https://push-test.mattermost.com"
-	MmSupportAdvisorAddress      = "support-advisor@mattermost.com"
+	GenericNotificationServer    = "https://push-test.cirql.chat"
+	MmSupportAdvisorAddress      = "support-advisor@cirql.chat"
 	FullNotification             = "full"
 	IdLoadedNotification         = "id_loaded"
 
@@ -139,11 +139,11 @@ const (
 
 	EmailSettingsDefaultFeedbackOrganization = ""
 
-	SupportSettingsDefaultTermsOfServiceLink = "https://mattermost.com/pl/terms-of-use/"
-	SupportSettingsDefaultPrivacyPolicyLink  = "https://mattermost.com/pl/privacy-policy/"
-	SupportSettingsDefaultAboutLink          = "https://mattermost.com/pl/about-mattermost"
-	SupportSettingsDefaultHelpLink           = "https://mattermost.com/pl/help/"
-	SupportSettingsDefaultReportAProblemLink = "https://mattermost.com/pl/report-a-bug"
+	SupportSettingsDefaultTermsOfServiceLink = "https://cirql.chat/pl/terms-of-use/"
+	SupportSettingsDefaultPrivacyPolicyLink  = "https://cirql.chat/pl/privacy-policy/"
+	SupportSettingsDefaultAboutLink          = "https://cirql.chat/pl/about-cirqlchat"
+	SupportSettingsDefaultHelpLink           = "https://cirql.chat/pl/help/"
+	SupportSettingsDefaultReportAProblemLink = "https://cirql.chat/pl/report-a-bug"
 	SupportSettingsDefaultSupportEmail       = ""
 	SupportSettingsDefaultReAcceptancePeriod = 365
 
@@ -179,9 +179,9 @@ const (
 	SamlSettingsCanonicalAlgorithmC14n11  = "Canonical1.1"
 	SamlSettingsDefaultCanonicalAlgorithm = SamlSettingsCanonicalAlgorithmC14n
 
-	NativeappSettingsDefaultAppDownloadLink        = "https://mattermost.com/pl/download-apps"
-	NativeappSettingsDefaultAndroidAppDownloadLink = "https://mattermost.com/pl/android-app/"
-	NativeappSettingsDefaultIosAppDownloadLink     = "https://mattermost.com/pl/ios-app/"
+	NativeappSettingsDefaultAppDownloadLink        = "https://cirql.chat/pl/download-apps"
+	NativeappSettingsDefaultAndroidAppDownloadLink = "https://cirql.chat/pl/android-app/"
+	NativeappSettingsDefaultIosAppDownloadLink     = "https://cirql.chat/pl/ios-app/"
 
 	ExperimentalSettingsDefaultLinkMetadataTimeoutMilliseconds                       = 5000
 	ExperimentalSettingsDefaultUsersStatusAndProfileFetchingPollIntervalMilliseconds = 3000
@@ -190,7 +190,7 @@ const (
 
 	AnnouncementSettingsDefaultBannerColor                  = "#f2a93b"
 	AnnouncementSettingsDefaultBannerTextColor              = "#333333"
-	AnnouncementSettingsDefaultNoticesJsonURL               = "https://notices.mattermost.com/"
+	AnnouncementSettingsDefaultNoticesJsonURL               = "https://notices.cirql.chat/"
 	AnnouncementSettingsDefaultNoticesFetchFrequencySeconds = 3600
 
 	TeamSettingsDefaultTeamText = "default"
@@ -231,8 +231,8 @@ const (
 	PluginSettingsDefaultDirectory         = "./plugins"
 	PluginSettingsDefaultClientDirectory   = "./client/plugins"
 	PluginSettingsDefaultEnableMarketplace = true
-	PluginSettingsDefaultMarketplaceURL    = "https://api.integrations.mattermost.com"
-	PluginSettingsOldMarketplaceURL        = "https://marketplace.integrations.mattermost.com"
+	PluginSettingsDefaultMarketplaceURL    = "https://api.integrations.cirql.chat"
+	PluginSettingsOldMarketplaceURL        = "https://marketplace.integrations.cirql.chat"
 
 	ComplianceExportDirectoryFormat                = "compliance-export-2006-01-02-15h04m"
 	ComplianceExportPath                           = "export"
@@ -264,10 +264,10 @@ const (
 	Office365SettingsDefaultTokenEndpoint   = "https://login.microsoftonline.com/common/oauth2/v2.0/token"
 	Office365SettingsDefaultUserAPIEndpoint = "https://graph.microsoft.com/v1.0/me"
 
-	CloudSettingsDefaultCwsURL        = "https://customers.mattermost.com"
-	CloudSettingsDefaultCwsAPIURL     = "https://portal.internal.prod.cloud.mattermost.com"
-	CloudSettingsDefaultCwsURLTest    = "https://portal.test.cloud.mattermost.com"
-	CloudSettingsDefaultCwsAPIURLTest = "https://api.internal.test.cloud.mattermost.com"
+	CloudSettingsDefaultCwsURL        = "https://customers.cirql.chat"
+	CloudSettingsDefaultCwsAPIURL     = "https://portal.internal.prod.cloud.cirql.chat"
+	CloudSettingsDefaultCwsURLTest    = "https://portal.test.cloud.cirql.chat"
+	CloudSettingsDefaultCwsAPIURLTest = "https://api.internal.test.cloud.cirql.chat"
 
 	OpenidSettingsDefaultScope = "profile openid email"
 

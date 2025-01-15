@@ -183,13 +183,13 @@
         "ShowFullName": true
     },
     "SupportSettings": {
-        "TermsOfServiceLink": "https://mattermost.com/pl/terms-of-use/",
-        "PrivacyPolicyLink": "https://mattermost.com/pl/privacy-policy/",
-        "AboutLink": "https://mattermost.com/default-about/",
-        "HelpLink": "https://mattermost.com/pl/help/",
-        "ReportAProblemLink": "https://mattermost.com/pl/report-a-bug",
+        "TermsOfServiceLink": "https://cirql.chat/pl/terms-of-use/",
+        "PrivacyPolicyLink": "https://cirql.chat/pl/privacy-policy/",
+        "AboutLink": "https://cirql.chat/default-about/",
+        "HelpLink": "https://cirql.chat/pl/help/",
+        "ReportAProblemLink": "https://cirql.chat/pl/report-a-bug",
         "ForgotPasswordLink": "",
-        "SupportEmail": "feedback@mattermost.com"
+        "SupportEmail": "cirqlchat@cirql.chat"
     },
     "AnnouncementSettings": {
         "EnableBanner": false,
@@ -296,9 +296,9 @@
         "LoginButtonTextColor": ""
     },
     "NativeAppSettings": {
-        "AppDownloadLink": "https://mattermost.com/download/",
-        "AndroidAppDownloadLink": "https://mattermost.com/pl/android-app/",
-        "IosAppDownloadLink": "https://mattermost.com/pl/ios-app/"
+        "AppDownloadLink": "https://cirql.chat/download/",
+        "AndroidAppDownloadLink": "https://cirql.chat/pl/android-app/",
+        "IosAppDownloadLink": "https://cirql.chat/pl/ios-app/"
     },
     "ClusterSettings": {
         "Enable": false,

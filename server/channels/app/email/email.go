@@ -77,7 +77,7 @@ func (es *Service) SendEmailChangeVerifyEmail(newUserEmail, locale, siteURL, tok
 	data.Props["VerifyButton"] = T("api.templates.email_change_verify_body.button")
 	data.Props["QuestionTitle"] = T("api.templates.questions_footer.title")
 	data.Props["EmailInfo1"] = T("api.templates.email_us_anytime_at")
-	data.Props["SupportEmail"] = "feedback@mattermost.com"
+	data.Props["SupportEmail"] = "feedback@cirqlchat.com"
 	data.Props["FooterV2"] = T("api.templates.email_footer_v2")
 
 	body, err := es.templatesContainer.RenderToString("email_change_verify_body", data)
