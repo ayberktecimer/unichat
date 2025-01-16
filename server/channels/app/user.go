@@ -134,7 +134,6 @@ func (a *App) CreateUserWithInviteId(c request.CTX, user *model.User, inviteId, 
 		c.Logger().Error("User sign-up not allowed", mlog.Err(err))
 		return nil, err
 	}
-
 	team, nErr := a.Srv().Store().Team().GetByInviteId(inviteId)
 	if nErr != nil {
 		var nfErr *store.ErrNotFound
@@ -144,6 +143,24 @@ func (a *App) CreateUserWithInviteId(c request.CTX, user *model.User, inviteId, 
 		default:
 			return nil, model.NewAppError("CreateUserWithInviteId", "app.team.get_by_invite_id.finding.app_error", nil, "", http.StatusInternalServerError).Wrap(nErr)
 		}
+	}
+
+	// Get domain mappings
+	domainTeamMap := LoadDomainToTeamMapping()
+
+	// Extract domain from user email
+	emailParts := strings.Split(user.Email, "@")
+	if len(emailParts) != 2 {
+		return nil, model.NewAppError("CreateUserWithInviteId", "api.user.create_user.invalid_email.app_error", nil, "", http.StatusBadRequest)
+	}
+	userDomain := emailParts[1]
+
+	// Check if user's email domain matches the team they're trying to join
+	allowedTeam, exists := domainTeamMap[userDomain]
+	if !exists || allowedTeam != team.Name {
+		return nil, model.NewAppError("CreateUserWithInviteId", "api.user.create_user.domain_mismatch.app_error", 
+			map[string]interface{}{"TeamName": team.Name, "Domain": userDomain}, 
+			"User's email domain does not match the invited team", http.StatusBadRequest)
 	}
 
 	if team.IsGroupConstrained() {
