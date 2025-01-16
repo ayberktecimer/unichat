@@ -125,7 +125,6 @@ func (a *App) CreateUserWithToken(c request.CTX, user *model.User, token *model.
 		c.Logger().Warn("Error while deleting token", mlog.Err(err))
 	}
 
-
 	return ruser, nil
 }
 
@@ -158,8 +157,8 @@ func (a *App) CreateUserWithInviteId(c request.CTX, user *model.User, inviteId, 
 	// Check if user's email domain matches the team they're trying to join
 	allowedTeam, exists := domainTeamMap[userDomain]
 	if !exists || allowedTeam != team.Name {
-		return nil, model.NewAppError("CreateUserWithInviteId", "api.user.create_user.domain_mismatch.app_error", 
-			map[string]interface{}{"TeamName": team.Name, "Domain": userDomain}, 
+		return nil, model.NewAppError("CreateUserWithInviteId", "api.user.create_user.domain_mismatch.app_error",
+			map[string]interface{}{"TeamName": team.Name, "Domain": userDomain},
 			"User's email domain does not match the invited team", http.StatusBadRequest)
 	}
 
